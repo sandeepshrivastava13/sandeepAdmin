@@ -1,4 +1,44 @@
 .datatable{
     height: 600px;
     padding: 20px;
+
+
+    .cellWithStatus{
+        padding:5px;
+        border-radius: 5px;
+
+        &.active{
+            color:green;
+            background-color: rgba(0,128,0,0.05);
+        }
+        &.pending{
+            color:goldenrod;
+            background-color: rgba(255,217,0,0.05);
+        }
+        &.passive{
+            color:crimson;
+            background-color: rgba(255,0,0,0.05);
+        }
+    }
+
+    .cellAction{
+        display:flex;
+        align-items: center;
+        gap:20px;
+
+
+        .viewButton{
+            padding:2px 5px;
+            border:1px solid darkblue;
+            border-radius: 5px;
+            color:blue
+        }
+
+        .deleteButton{
+            padding:2px 5px;
+            border:1px solid crimson;
+            border-radius: 5px;
+            color:blue
+        }
+    }
 }

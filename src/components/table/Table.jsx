@@ -8,7 +8,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
 
-const List=()=>{
+const List=({title})=>{
     const rows = [
         {
           id: 1143155,
@@ -64,6 +64,7 @@ const List=()=>{
     return(
         
     <TableContainer component={Paper} className="table">
+      <h1 className="title" style={{padding:20, fontSize:20,color:'lightGray'}}>{title}</h1>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
